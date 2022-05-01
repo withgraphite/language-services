@@ -20,3 +20,12 @@ export function getFullLanguageName(languageName: string) {
 
   return language.name;
 }
+
+export function listLanguages() {
+  return hljs.listLanguages().map(language => {
+    return {
+      language: language,
+      name: hljs.getLanguage(language)?.name || language
+    }
+  })
+}
