@@ -1,0 +1,23 @@
+{
+  "name": "@withgraphite/language-services",
+  "version": "0.0.1",
+  "license": "None",
+  "description": "A mapping of file extensions to languages",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withgraphite/language-services"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "highlight.js": "^11.5.1",
+    "highlightjs-terraform": "https://github.com/highlightjs/highlightjs-terraform.git"
+  }
+}
