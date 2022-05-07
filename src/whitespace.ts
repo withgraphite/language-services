@@ -10,7 +10,7 @@ const CAN_IGNORE_WHITESPACE = [
   "TypeScript"
 ];
 
-export function canIgnoreWhitespace(language: string) {
+export function canIgnoreWhitespace(language: string): boolean {
   const fullLanguageName = getFullLanguageName(language);
-  return fullLanguageName && CAN_IGNORE_WHITESPACE.includes(fullLanguageName);
+  return fullLanguageName ? CAN_IGNORE_WHITESPACE.includes(fullLanguageName) : false;
 }
