@@ -1,5 +1,5 @@
 import hljs from "highlight.js";
-import terraform from "highlightjs-terraform";
+import {terraform} from "./languages/terraform";
 
 terraform(hljs);
 // Add additional `hljs` configuration here
