@@ -1,6 +1,6 @@
 {
   "name": "@withgraphite/language-services",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "None",
   "description": "A mapping of file extensions to languages",
   "main": "dist/src/index.js",
