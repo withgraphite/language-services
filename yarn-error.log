@@ -1,35 +1,35 @@
 Arguments: 
-  /Users/tomasreimers/.nvm/versions/node/v15.14.0/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js add @types/highlightjs-terraform
+  /Users/jacobgold/.nvm/versions/node/v16.15.1/bin/node /Users/jacobgold/.yarn/bin/yarn.js add -D @types/highlightjs-svelte
 
 PATH: 
-  /Users/tomasreimers/.nvm/versions/node/v15.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+  /Users/jacobgold/.nvm/versions/node/v16.15.1/bin:/Users/jacobgold/.yarn/bin:/Users/jacobgold/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/jacobgold/.nvm/versions/node/v16.15.1/bin:/Users/jacobgold/.yarn/bin:/Users/jacobgold/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jacobgold/Library/Application Support/JetBrains/Toolbox/scripts:/Users/jacobgold/Library/Application Support/JetBrains/Toolbox/scripts
 
 Yarn version: 
-  1.22.18
+  1.22.19
 
 Node version: 
-  15.14.0
+  16.15.1
 
 Platform: 
-  darwin x64
+  darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fhighlightjs-terraform: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:66138:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:140883:22)
-      at Request.emit (node:events:369:20)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141855:10)
-      at Request.emit (node:events:369:20)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141777:12)
-      at Object.onceWrapper (node:events:475:28)
-      at IncomingMessage.emit (node:events:381:22)
-      at endReadableNT (node:internal/streams/readable:1307:12)
-      at processTicksAndRejections (node:internal/process/task_queues:81:21)
+  Error: https://registry.yarnpkg.com/@types%2fhighlightjs-svelte: Not found
+      at Request.params.callback [as _callback] (/Users/jacobgold/.yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/Users/jacobgold/.yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/Users/jacobgold/.yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/Users/jacobgold/.yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
     "name": "@withgraphite/language-services",
-    "version": "0.0.1",
+    "version": "0.0.8",
     "license": "None",
     "description": "A mapping of file extensions to languages",
     "main": "dist/src/index.js",
@@ -39,15 +39,19 @@ npm manifest:
       "url": "https://github.com/withgraphite/language-services"
     },
     "files": [
-      "dist/"
+      "dist/",
+      "src/"
     ],
     "scripts": {
       "build": "tsc",
       "prepublishOnly": "yarn build"
     },
     "dependencies": {
-      "highlight.js": "^11.5.1",
-      "highlightjs-terraform": "https://github.com/highlightjs/highlightjs-terraform.git"
+      "highlight.js": "^11.6.0",
+      "highlightjs-svelte": "^1.0.6"
+    },
+    "devDependencies": {
+      "typescript": "^4.7.4"
     }
   }
 
@@ -59,11 +63,17 @@ Lockfile:
   # yarn lockfile v1
   
   
-  highlight.js@^11.5.1:
-    version "11.5.1"
-    resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.5.1.tgz#027c24e4509e2f4dcd00b4a6dda542ce0a1f7aea"
-    integrity sha512-LKzHqnxr4CrD2YsNoIf/o5nJ09j4yi/GcH5BnYz9UnVpZdS4ucMgvP61TDty5xJcFGRjnH4DpujkS9bHT3hq0Q==
+  highlight.js@^11.6.0:
+    version "11.6.0"
+    resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.6.0.tgz#a50e9da05763f1bb0c1322c8f4f755242cff3f5a"
+    integrity sha512-ig1eqDzJaB0pqEvlPVIpSSyMaO92bH1N2rJpLMN/nX396wTpDA4Eq0uK+7I/2XG17pFaaKE0kjV/XPeGt7Evjw==
   
-  "highlightjs-terraform@https://github.com/highlightjs/highlightjs-terraform.git":
+  highlightjs-svelte@^1.0.6:
     version "1.0.6"
-    resolved "https://github.com/highlightjs/highlightjs-terraform.git#e5e42f6b9ee682f659a7d00d5218204fac7b04a9"
+    resolved "https://registry.yarnpkg.com/highlightjs-svelte/-/highlightjs-svelte-1.0.6.tgz#e8bfc616478f8acecdef73e7e15a65b083c1ef40"
+    integrity sha512-aXuBPz8df3sOXg90q8rRcBLyxIR8ozPU39a6tJ2rpJUjjd9brRIr55aC0IccW4gsPhQxZ+B3rFugdXsg9/ckDw==
+  
+  typescript@^4.7.4:
+    version "4.7.4"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
+    integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
