@@ -1,6 +1,6 @@
 import hljs from "highlight.js";
 import { terraform } from "./languages/terraform";
-import { hljs_svelte } from "highlightjs-svelte"
+import hljs_svelte from "highlightjs-svelte"
 
 terraform(hljs);
 hljs_svelte(hljs);
