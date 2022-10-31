@@ -1,9 +1,9 @@
 import hljs from "highlight.js";
+import { svelte } from "./languages/svelte";
 import { terraform } from "./languages/terraform";
-import hljs_svelte from "highlightjs-svelte"
 
 terraform(hljs);
-hljs_svelte(hljs);
+svelte(hljs);
 // Add additional `hljs` configuration here
 
 export function highlight(language: string, code: string) {
