@@ -84,5 +84,5 @@ function hljsDefineTerraform(hljs: HLJSApi): Language {
 }
 
 export function terraform(hljs: HLJSApi) {
-    hljs.registerLanguage('Terraform', hljsDefineTerraform);
+    hljs.registerLanguage('terraform', hljsDefineTerraform);
 };

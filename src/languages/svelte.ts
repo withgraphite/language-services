@@ -54,5 +54,5 @@ function hljsDefineSvelte(hljs: HLJSApi) : Language {
 }
 
 export function svelte(hljs: HLJSApi) {
-    hljs.registerLanguage('Svelte', hljsDefineSvelte);
+    hljs.registerLanguage('svelte', hljsDefineSvelte);
 };
