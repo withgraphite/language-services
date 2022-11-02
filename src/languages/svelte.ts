@@ -4,7 +4,7 @@ import {HLJSApi, Language} from "highlight.js";
  * from https://github.com/AlexxNB/highlightjs-svelte v1.0.6
  */
 
-function hljsDefineSvelte(hljs: HLJSApi) : Language{
+function hljsDefineSvelte(hljs: HLJSApi) : Language {
     return {
         subLanguage: "xml",
         contains: [
@@ -54,5 +54,5 @@ function hljsDefineSvelte(hljs: HLJSApi) : Language{
 }
 
 export function svelte(hljs: HLJSApi) {
-    hljs.registerLanguage('Terraform', hljsDefineSvelte);
+    hljs.registerLanguage('Svelte', hljsDefineSvelte);
 };

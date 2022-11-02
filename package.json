@@ -1,6 +1,6 @@
 {
   "name": "@withgraphite/language-services",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "None",
   "description": "A mapping of file extensions to languages",
   "main": "dist/src/index.js",
@@ -18,8 +18,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "highlight.js": "^11.6.0",
-    "highlightjs-svelte": "^1.0.6"
+    "highlight.js": "^11.6.0"
   },
   "devDependencies": {
     "typescript": "^4.7.4"
