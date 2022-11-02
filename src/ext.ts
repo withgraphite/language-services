@@ -905,7 +905,7 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
     wisp: "txt",
     prg: "txt",
     prw: "txt",
-    svelte: "Svelte",
+    svelte: "svelte",
   };
 
   export function languageFromExtension(extension: string) {
