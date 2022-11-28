@@ -153,7 +153,7 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
     "cxx-objdump": "cpp",
     creole: "txt",
     cr: "Crystal",
-    feature: "txt",
+    feature: "Gherkin",
     cu: "txt",
     cuh: "txt",
     cy: "Python",
