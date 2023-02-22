@@ -775,7 +775,7 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
     vbhtml: "basic",
     vbs: "basic",
     volt: "txt",
-    vue: "txt",
+    vue: "Vue",
     owl: "txt",
     webidl: "txt",
     x10: "txt",
