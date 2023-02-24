@@ -1,0 +1,40 @@
+name: core-tests
+
+on:
+  pull_request:
+    types: [
+        # Default pull_request trigger types.
+        opened,
+        synchronize,
+        reopened,
+      ]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+  actions: write
+  checks: write
+
+jobs:
+  build:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.0
+      - name: restore_yarn_cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ./.yarn/cache
+          key: yarn-cache-2-${{ hashFiles('yarn.lock', '.yarnrc.yml') }}
+          restore-keys: |
+            yarn-cache-2
+      - name: yarn_install
+        run: yarn install  --immutable
+      - name: yarn_build
+        run: yarn build
