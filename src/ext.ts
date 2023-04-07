@@ -906,6 +906,9 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
     prg: "txt",
     prw: "txt",
     svelte: "svelte",
+    textproto: "textproto",
+    pbtxt: "textproto",
+    prototxt: "textproto",
   };
 
   export function languageFromExtension(extension: string) {
