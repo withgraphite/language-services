@@ -909,6 +909,14 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
     textproto: "textproto",
     pbtxt: "textproto",
     prototxt: "textproto",
+    gdscript: "gdscript",
+    gdshader: "gdshader",
+    godot: "gdresource",
+    tres: "gdresource",
+    tscn: "gdresource",
+    import: "gdresource",
+    gdns: "gdresource",
+    gdnlib: "gdresource",
   };
 
   export function languageFromExtension(extension: string) {

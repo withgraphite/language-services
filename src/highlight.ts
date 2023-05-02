@@ -6,7 +6,7 @@ terraform(hljs);
 svelte(hljs);
 // Add additional `hljs` configuration here
 
-const VSCODE_SYNTAX_HIGHLIGHTING_LANGUAGES = ["textproto", "Vue"];
+const VSCODE_SYNTAX_HIGHLIGHTING_LANGUAGES = ["textproto", "Vue", "gdscript", "gdshader", "gdresource"];
 
 export function highlight(language: string, code: string) {
   return hljs.highlight(code, { language });
@@ -35,6 +35,6 @@ export function listLanguages() {
     return {
       language: language,
       name: language,
-      };
+    };
   }));
 }
